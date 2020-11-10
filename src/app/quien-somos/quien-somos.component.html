@@ -1,0 +1,21 @@
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <!-- Mostramos los miembros, al seleccionar uno mostrara sus datos -->
+      <div class="col">
+        <h3>Lista de Miembros:</h3>
+        <app-lista-miembros (informarEvent)="cambiarMiembroSeleccionado($event)"></app-lista-miembros>
+      </div>
+
+      <!-- Aqui se mostraran los datos del miembro elegido -->
+      <div class="col">
+        <h3>Detalles del Miembro:</h3>
+        <app-detalles-miembros [miembro]="miembroSeleccionado"></app-detalles-miembros>
+      </div>
+</div>
+<br>
+<br>
+<br>
+

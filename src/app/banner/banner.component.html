@@ -1,0 +1,25 @@
+<!-- Banner de la pagina -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="../../assets/banner-1559400_1920.jpg" class="d-block w-100" >
+    </div>
+  </div>
+</div>
+
+<!-- Barra de la pagina -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Botones para acceder a los apartados de la pagina -->
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link" [routerLink]="['/inicio']" routerLinkActive="active" >Inicio <span class="sr-only">(current)</span></a>
+      <a class="nav-link" [routerLink]="['/eventos']" routerLinkActive="active">Eventos</a>
+      <a class="nav-link" [routerLink]="['/quien-somos']" routerLinkActive="active">¿Quien somos?</a>
+    </div>
+  </div>
+</nav>
